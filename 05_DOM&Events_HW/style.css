@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#field {
+  width: 800px;
+  height: 500px;
+  background-image: url('field.jpg');
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid black;
+}
+
+#ball {
+  width: 70px;
+  height: 50px;
+  position:absolute;
+  top: 225px;
+  left: 365px;
+  transition: top 0.5s, left 0.5s;
+}
+
+.traffic-light {
+  width: 100px;
+  background-color: #333;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  background-color: grey;
+  margin: 10px auto;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
