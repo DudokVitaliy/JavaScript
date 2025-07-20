@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="test">
+        <form id = "testForm">
+            <div>
+                <h2 class="header">Simple Test</h2>
+                <div class="question">
+                    <p>1. What is the capital of France?</p>
+                    <label><input type="radio" name="q1" value="a"> Berlin</label><br>
+                    <label><input type="radio" name="q1" value="b"> Madrid</label><br>
+                    <label><input type="radio" name="q1" value="c"> Paris</label><br>
+                    <label><input type="radio" name="q1" value="d"> Rome</label>
+                </div>
+                <div class="question">
+                    <p>2. Which planet is known as the Red Planet?</p>
+                    <label><input type="radio" name="q2" value="a"> Venus</label><br>
+                    <label><input type="radio" name="q2" value="b"> Mars</label><br>
+                    <label><input type="radio" name="q2" value="c"> Jupiter</label><br>
+                    <label><input type="radio" name="q2" value="d"> Saturn</label>
+                </div>
+                <div class="question">
+                    <p>3. What is 2 + 2?</p>
+                    <label><input type="radio" name="q3" value="a"> 3</label><br>
+                    <label><input type="radio" name="q3" value="b"> 4</label><br>
+                    <label><input type="radio" name="q3" value="c"> 5</label><br>
+                    <label><input type="radio" name="q3" value="d"> 6</label>
+                </div>
+                <div class="question">
+                    <p>4. Which language is used for web pages?</p>
+                    <label><input type="radio" name="q4" value="a"> Python</label><br>
+                    <label><input type="radio" name="q4" value="b"> Java</label><br>
+                    <label><input type="radio" name="q4" value="c"> HTML</label><br>
+                    <label><input type="radio" name="q4" value="d"> C++</label>
+                </div>
+                <div class="question">
+                    <p>5. What color do you get when you mix red and white?</p>
+                    <label><input type="radio" name="q5" value="a"> Pink</label><br>
+                    <label><input type="radio" name="q5" value="b"> Purple</label><br>
+                    <label><input type="radio" name="q5" value="c"> Orange</label><br>
+                    <label><input type="radio" name="q5" value="d"> Brown</label>
+                </div>
+                <button id = "submitBtn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="result">
+        <h2>Result</h2>
+        <p id="score"></p>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <br>
+    <div class="text">
+        <h2>Text Input</h2>
+        <form>
+            
+<div id ="textStyle">
+    <label><input type="radio" name="style" value="bold"> Bold</label>
+    <label><input type="radio" name="style" value="italic"> Italic</label>
+    <label><input type="radio" name="style" value="underline"> Underline</label>
+    <label><input type="radio" name="justify" value="left"> Left</label>
+    <label><input type="radio" name="justify" value="center"> Center</label>
+    <label><input type="radio" name="justify" value="right"> Right</label>
+</div>
+<div>
+    <input type="text" id="userText" name="userText">
+</div>
+<div>
+    <button type="button" id="applyStyleBtn">Apply</button>
+</div>
+<div id="styledText" style="margin-top:15px;"></div>
+</form>
+     
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Working with Form</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel aut nihil voluptates neque, magnam quidem repellat, veniam, aliquid eaque cupiditate at doloremque laborum? In optio maiores repellat alias nisi?</p>
+    
+    <h2>Create New Form</h2>
+    <form name = "productForm">
+        <label>Name: <input type="text" name = "name"></label>
+        <label>Price: <input type="number" step="0.01" name = "price"></label>
+        <label>Quantity: <input type="number" min = "0" name = "quantity"></label>
+        <label>Category: <select name = "category">
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+            <option value="home">Home&Kitchen</option>  
+        </select></label>
+        <label>Used: <input type="checkbox" name = "used"></label>
+        <button type="reset">Cancel</button>
+        <button id = "addBtn" type = "submit">Create</button>
+    </form>
+<h2>Products List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Category</th>
+                <th>Used</th>
+            </tr>
+        </thead>
+        <tbody id="product-list">
+            <!-- Product items will be added here -->
+            <tr>
+                <td>Sample Product</td>
+                <td>19.99</td>
+                <td>5</td>
+                <td>Electronics</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+    <div><button id = "clearAllBtn">Clear All</button></div>
+    <script src = "product.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.test {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    /* вернути назад потім */
+    display: none;
+}
+.question {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 1px;
+}
+.header {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+#submitBtn {
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #0c9910;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#submitBtn:hover {
+    background-color: #0a7a0c;
+}
+#result {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display:none;
+}
+#resetBtn {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+#resetBtn:hover {
+    background-color: #d32f2f;
+}
+.text {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: hsl(253, 71%, 89%);
+}
+.text h2 {
+    text-align: center;
+    color: hsl(253, 71%, 20%);
+    font-family: 'Times New Roman', Times, serif;
+}
+#textStyle {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(253, 71%, 89%);
+}
+#userText {
+    display: block;
+    width: 80%;
+    min-height: 120px;
+    padding: 10px;
+    border: 1px solid hsl(253, 71%, 20%);
+    border-radius: 5px;
+    margin: 20px auto;
+    vertical-align: top;
+    text-align: left;
+    word-break: break-all;
+    line-clamp: 3;
+}
+
