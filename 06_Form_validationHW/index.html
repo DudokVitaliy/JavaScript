@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Create New Color</h2>
+    <form id="colorForm">
+  <label for="name">Color:</label>
+  <input type="text" id="name" placeholder="Enter color name">
+  <div id="nameError" class="error"></div>
+
+  <label for="type">Type:</label>
+  <select id="type">
+      <option value="RGB">RGB</option>
+      <option value="RGBA">RGBA</option>
+      <option value="HEX">HEX</option>
+  </select>
+  <div id="typeError" class="error"></div>
+
+  <label for="code">Code:</label>
+  <input type="text" id="code" placeholder="Enter color code">
+  <div id="codeError" class="error"></div>
+
+  <button type="submit">Save</button>
+</form>
+
+
+    <button id="clearColorsBtn">Clear All</button>
+    <div id="infoMessage"></div>
+
+    <div id="colorsContainer"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="mian.js"></script>
+</body>
+</html>
