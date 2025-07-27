@@ -34,20 +34,20 @@ resetBtn.addEventListener('click', function() {
 });
 
  function showStyledText() {
-      const text = document.getElementById('textInput').value;
+      let text = document.getElementById('textInput').value;
 
-      const isBold = document.getElementById('bold').checked;
-      const isUnderline = document.getElementById('underline').checked;
-      const isItalic = document.getElementById('italic').checked;
+      let isBold = document.getElementById('bold').checked;
+      let isUnderline = document.getElementById('underline').checked;
+      let isItalic = document.getElementById('italic').checked;
 
-      const align = document.querySelector('input[name="align"]:checked').value;
+      let align = document.querySelector('input[name="align"]:checked').value;
 
-      const styledText = document.getElementById('styledText');
-      const result = document.getElementById('text_result');
+      let styledText = document.getElementById('styledText');
+      let result = document.getElementById('text_result');
 
       styledText.innerHTML = '';
 
-      const p = document.createElement('p');
+      let p = document.createElement('p');
       p.textContent = text;
       p.style.fontWeight = isBold ? 'bold' : 'normal';
       p.style.textDecoration = isUnderline ? 'underline' : 'none';
@@ -57,3 +57,11 @@ resetBtn.addEventListener('click', function() {
       styledText.appendChild(p);
       result.style.display = 'block';
     }
+
+let textBtn = document.getElementById('textBtn');
+textBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  showStyledText();
+});
+
+
