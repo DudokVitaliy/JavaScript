@@ -56,29 +56,27 @@
         <button id="resetBtn">Reset</button>
     </div>
 
-    <br>
-    <div class="text">
-        <h2>Text Input</h2>
-        <form>
-            
-<div id ="textStyle">
-    <label><input type="radio" name="style" value="bold"> Bold</label>
-    <label><input type="radio" name="style" value="italic"> Italic</label>
-    <label><input type="radio" name="style" value="underline"> Underline</label>
-    <label><input type="radio" name="justify" value="left"> Left</label>
-    <label><input type="radio" name="justify" value="center"> Center</label>
-    <label><input type="radio" name="justify" value="right"> Right</label>
-</div>
-<div>
-    <input type="text" id="userText" name="userText">
-</div>
-<div>
-    <button type="button" id="applyStyleBtn">Apply</button>
-</div>
-<div id="styledText" style="margin-top:15px;"></div>
-</form>
-     
-</div>
-    <script src="main.js"></script>
+
+     <div class="container">
+    <form id="styleForm">
+      <div class="options">
+        <label><input type="checkbox" id="bold"> Bold</label>
+        <label><input type="checkbox" id="underline"> Underline</label>
+        <label><input type="checkbox" id="italic"> Italics</label>
+        &nbsp;&nbsp;&nbsp;
+        <label><input type="radio" name="align" value="left" checked> Left</label>
+        <label><input type="radio" name="align" value="right"> Right</label>
+        <label><input type="radio" name="align" value="center"> Center</label>
+      </div>
+      <textarea id="textInput" placeholder="Enter your text here..."></textarea><br><br>
+      <button type="button" onclick="showStyledText()">Show text</button>
+    </form>
+
+    <div id="text_result" class="output" style="display: none;">
+      <div class="output-title">Result:</div>
+      <div id="styledText"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>

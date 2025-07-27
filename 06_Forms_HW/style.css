@@ -1,3 +1,11 @@
+body {
+      font-family: sans-serif;
+      background-color: #f0ebe7;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
 .test {
     width: 50%;
     margin: auto;
@@ -50,34 +58,42 @@
 #resetBtn:hover {
     background-color: #d32f2f;
 }
-.text {
-    width: 50%;
-    margin: auto;
+
+.container {
+    background-color: #fff6f0;
+    border: 1px solid #ccc;
     padding: 20px;
-    background-color: hsl(253, 71%, 89%);
-}
-.text h2 {
-    text-align: center;
-    color: hsl(253, 71%, 20%);
-    font-family: 'Times New Roman', Times, serif;
-}
-#textStyle {
-    margin: auto;
-    text-align: center;
-    padding: 10px;
-    background-color: hsl(253, 71%, 89%);
-}
-#userText {
-    display: block;
-    width: 80%;
-    min-height: 120px;
-    padding: 10px;
-    border: 1px solid hsl(253, 71%, 20%);
-    border-radius: 5px;
-    margin: 20px auto;
-    vertical-align: top;
-    text-align: left;
-    word-break: break-all;
-    line-clamp: 3;
+    width: 550px;
+    box-shadow: 0 0 10px #ccc;
 }
 
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.options {
+    margin-bottom: 10px;
+}
+
+.options label {
+    margin-right: 10px;
+}
+
+.output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5eadd;
+    border: 1px solid #ccc;
+}
+
+.output-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#styledText {
+    display: block;
+    white-space: pre-wrap;
+}

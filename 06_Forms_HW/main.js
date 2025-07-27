@@ -32,3 +32,28 @@ resetBtn.addEventListener('click', function() {
     resalt = 0;
     score.textContent = '';
 });
+
+ function showStyledText() {
+      const text = document.getElementById('textInput').value;
+
+      const isBold = document.getElementById('bold').checked;
+      const isUnderline = document.getElementById('underline').checked;
+      const isItalic = document.getElementById('italic').checked;
+
+      const align = document.querySelector('input[name="align"]:checked').value;
+
+      const styledText = document.getElementById('styledText');
+      const result = document.getElementById('text_result');
+
+      styledText.innerHTML = '';
+
+      const p = document.createElement('p');
+      p.textContent = text;
+      p.style.fontWeight = isBold ? 'bold' : 'normal';
+      p.style.textDecoration = isUnderline ? 'underline' : 'none';
+      p.style.fontStyle = isItalic ? 'italic' : 'normal';
+      p.style.textAlign = align;
+
+      styledText.appendChild(p);
+      result.style.display = 'block';
+    }
