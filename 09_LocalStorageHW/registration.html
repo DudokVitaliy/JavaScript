@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Реєстрація</h2>
+<form id="registerForm">
+    <input type="text" id="firstName" placeholder="Ім'я" required>
+    <input type="text" id="lastName" placeholder="Прізвище" required>
+    <input type="text" id="username" placeholder="Ім'я користувача" required>
+    <input type="email" id="email" placeholder="Пошта" required>
+    <input type="tel" id="phone" placeholder="Телефон" required>
+    <input type="password" id="password" placeholder="Пароль" required>
+    <input type="url" id="avatar" placeholder="URL аватарки" required>
+    <button type="submit">Зареєструватися</button>
+</form>
+
+<script src="script.js"></script>
+<script>
+document.getElementById("registerForm").addEventListener("submit", handleRegister);
+</script>
+</body>
+</html>
