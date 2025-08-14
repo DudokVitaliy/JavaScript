@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>JS promise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="task">
+    <h2>1 ProcessArray</h2>
+    <input type="text" id="task1input" placeholder="Enter numbers or words separated by commas">
+    <br>
+    <button onclick="runTask1()">Start</button>
+    <div id="task1output"></div>
+</div>
+
+<div class="task">
+    <h2>2 SortArray з Promise</h2>
+    <input type="text" id="task2input" placeholder="Enter numbers separated by commas.">
+    <br>
+    <button onclick="runTask2()">Start</button>
+    <div id="task2output"></div>
+</div>
+
+<div class="task">
+    <h2>3 MultiplyAsync</h2>
+    <input type="number" id="task3inputA" placeholder="Number A">
+    <input type="number" id="task3inputB" placeholder="Number B">
+    <br>
+    <button onclick="runTask3()">Start</button>
+    <div id="task3output"></div>
+</div>
+
+<div class="task">
+    <h2>4 Stopwatch</h2>
+    <div id="time">00:00:00</div>
+    <button onclick="start()">Start</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="reset()">Reset</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
