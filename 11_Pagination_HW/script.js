@@ -13,7 +13,7 @@ async function fetchCharacters() {
         renderPage(currentPage);
         renderPagination();
     } catch (err) {
-        charactersContainer.innerHTML = "<p>Помилка завантаження даних...</p>";
+        charactersContainer.innerHTML = "<p>Data loading error...</p>";
         console.error(err);
     }
 }
