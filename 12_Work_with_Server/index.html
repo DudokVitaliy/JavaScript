@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MY WEATHER</h1>
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+
+    <nav>
+        <button class="tab-btn active" data-tab="today">Today</button>
+        <button class="tab-btn" data-tab="forecast">5-day Forecast</button>
+    </nav>
+
+    <main>
+        <section id="today" class="tab-content active">
+            <div id="greeting"></div>
+            <div id="today-summary" class="block"></div>
+            <div id="today-hourly" class="block scroll-container"></div>
+            <div id="nearby-cities" class="block scroll-container"></div>
+        </section>
+
+        <section id="forecast" class="tab-content">
+            <div id="forecast-days" class="block scroll-container"></div>
+            <div id="forecast-hourly" class="block scroll-container"></div>
+        </section>
+    </main>
+
+    <div id="error" class="error-message"></div>
+    <script src="script.js"></script>
+</body>
+</html>
